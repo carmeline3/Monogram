@@ -74,7 +74,7 @@ header{
 }
 
 .image{
-  border: 9px solid orange;
+  /* border: 9px solid orange; */
   height:280vh;
   display: grid;
   gap:10px;
@@ -86,6 +86,7 @@ header{
 
 
 .gri{
+  
   border: 2px solid blue;
   width: 90%;
   height: 45vh;
@@ -128,7 +129,8 @@ h3{
 }
 
 .price{
-  text-align: end;
+  font-size: 12px;
+  color: gray;
 }
 .banner{
     border: 2px solid red;
@@ -138,72 +140,64 @@ h3{
 
 /* This is the footer section */
 
+
 footer {
   height: 44.2vh;
-  
   background-color: #1a2456;
   display: flex;
-  justify-content: space-around;
     flex-wrap: wrap;
-    padding: 50px;
-    
+    justify-content: center;
+
+  padding: 50px;
+}
+
+.mono, .quicklinks, .help, .info, .contact {
+  gap: 10px;
+  min-width: 200px;
  
-  
 }
 
-h6{
-  color: #efc2b3
+h6 {
+  color: #efc2b3;
 }
 
 
-footer li{
+footer li {
   list-style: none;
-  line-height: 20px;
   font-size: 12.6px;
-  
+  line-height: 30px;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: #efc2b3;
 }
 
-/* .icon {
-  color: #1a2456;
-  font-size: 15px;
-} */
-
-.icon-space{
-  border: 2px solid green;
+.icon-space {
   display: flex;
-  justify-content: start;
-  flex-direction: row;
-  padding:10px;
+  gap: 10px;
+  padding: 10px 0;
 }
 
-.icon{
-  color: #1a2456;
+.icon {
   background-color: #efc2b3;
-   width: 30px;
+  width: 30px;
   height: 30px;
   border-radius: 50%;
-  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.submit{
+.icon a {
+  color: #1a2456;
+}
+
+.submit {
   border-radius: 15px;
-  width:100px;
+  width: 100px;
   height: 30px;
 }
-
-.contact{
-  border: 2px solid green;
-  
-}
-
 
 @media(max-width:1200px){
  .image{
