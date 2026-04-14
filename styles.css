@@ -2,6 +2,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: prompt, sans-serif;
     
 }
 
@@ -29,7 +30,9 @@ header{
    grid-template-columns: 35vw 35vw;
     gap:10px;
     padding-left: 195px;
-    padding-top: 40px;
+
+
+    padding-top: 38px;
     /* padding: 0px 10px 10px 10px; */
     border: 4px solid orange;
     height: 200vh;
@@ -57,30 +60,75 @@ header{
 
 
 .console2{
-  border:9px solid black;
+  /* border:9px solid black; */
   height: 69vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(images/banner2);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 
 .image{
-  border: 1px solid purple;
+  border: 9px solid orange;
   height:280vh;
-   display: grid;
-   grid-template-columns: 25vw 25vw 25vw;
-    gap:10px;
-     padding-left: 195px;
-    padding-top: 40px;
-    /* padding: 0px 10px 10px 10px; */
-    border: 9px solid orange;
-    height: 280vh;
-    /* overflow: hidden; */
-    
+  display: grid;
+  gap:10px;
+  grid-template-columns: 25vw 25vw 25vw;
+  padding-left: 180px;
+  padding-right: 200px;
+  padding-top: 70px;
 }
+
 
 .gri{
   border: 2px solid blue;
-  width: 100%;
-  height: 50vh;
+  width: 90%;
+  height: 45vh;
+  position: relative;  
+  overflow: hidden;    
+}
 
+
+.gri img{
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.main{
+  opacity: 1;
+}
+
+
+.hovy{
+  opacity: 0;
+}
+
+
+.gri:hover .main{
+  opacity: 0;
+}
+
+.gri:hover .hovy{
+  opacity: 1;
+}
+
+h3{
+  font-size: 17.5px;
+  padding: 10px;
+}
+
+.price{
+  text-align: end;
 }
 .banner{
     border: 2px solid red;
@@ -88,8 +136,89 @@ header{
     width:100vw;
 }
 
-.foot{
-  border:2px solid black;
-  height:44.2vh;
+/* This is the footer section */
+
+footer {
+  height: 44.2vh;
+  
+  background-color: #1a2456;
+  display: flex;
+  justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    
+ 
+  
 }
 
+h6{
+  color: #efc2b3
+}
+
+
+footer li{
+  list-style: none;
+  line-height: 20px;
+  font-size: 12.6px;
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: #efc2b3;
+}
+
+/* .icon {
+  color: #1a2456;
+  font-size: 15px;
+} */
+
+.icon-space{
+  border: 2px solid green;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  padding:10px;
+}
+
+.icon{
+  color: #1a2456;
+  background-color: #efc2b3;
+   width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit{
+  border-radius: 15px;
+  width:100px;
+  height: 30px;
+}
+
+.contact{
+  border: 2px solid green;
+  
+}
+
+
+@media(max-width:1200px){
+ .image{
+  grid-template-columns: 80vw ;
+  height: 550%;
+  gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  
+}
+
+.gri{
+  border: 2px solid blue;
+  width: 90%;
+  height: 45vh;
+}
+}
