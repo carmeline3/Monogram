@@ -10,14 +10,34 @@ header{
     margin:14px ;
     border:2px solid green;
     height: 50px; 
+    background-color: #1A2456;
+    padding: 7px;
+    position: sticky;
+    align-items: center;
+    display: flex;
+    float: right;
+    
+    
+}
+.all{
+  height: 142.5;
+  border:10px solid purple;background-image: url("images/shop_cta_xl_896f6b8270 (3).webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .console1{
    border:2px solid green;
    height: 92.5vh;
     border: 2px solid red;
     height: 82.5vh;
-    
+  color: #EFC2B3;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 0px 14px;
+  position-relative: 
 }
+
+
 
 .images-section1{
   border:4px solid blue;
@@ -43,18 +63,29 @@ header{
   width: 100%;
   height: 50vh;
 
+  
 }
 
-.gr{
+.grid img{
+  max-width: 500px;
+  height: 100%;
+  width: 474px;
+}
+ .gr{
   width: 204%;
   height: 50vh;
-  border: 2px solid blue;
+  border: 2px solid blue; 
 }
+/* .gr img5{
+  width: 100%;
+  height: 50vh; */
 
-
-
-
-
+}
+.gr{
+  max-width: 500px;
+  height: 100%;
+  width: 474px;
+}
 
 .console2{
   border:9px solid black;
@@ -92,4 +123,10 @@ header{
   border:2px solid black;
   height:44.2vh;
 }
+.console1{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
+}
