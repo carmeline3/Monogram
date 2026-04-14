@@ -7,7 +7,7 @@
 
 /* Still trying to style the nav and banner */
 header{
-    margin:10px ;
+    margin:14px ;
     border:2px solid green;
     height: 50px; 
 }
@@ -20,20 +20,68 @@ header{
 }
 
 .images-section1{
-  border:2px solid blue;
-  height: 120vh;
+  border:4px solid blue;
+  height: 200vh;
 }
 
+.images{
+    display: grid;
+   grid-template-columns: 35vw 35vw;
+    gap:10px;
+    padding-left: 195px;
+    padding-top: 40px;
+    /* padding: 0px 10px 10px 10px; */
+    border: 4px solid orange;
+    height: 200vh;
+    /* overflow: hidden; */
+    
+}
+
+
+.grid{
+  border: 2px solid blue;
+  width: 100%;
+  height: 50vh;
+
+}
+
+.gr{
+  width: 204%;
+  height: 50vh;
+  border: 2px solid blue;
+}
+
+
+
+
+
+
 .console2{
-  border:2px solid black;
+  border:9px solid black;
   height: 69vh;
 }
 
-.images-section2{
-  border: 2px solid purple;
-  height:150vh;
+.image{
+  border: 1px solid purple;
+  height:280vh;
+   display: grid;
+   grid-template-columns: 25vw 25vw 25vw;
+    gap:10px;
+     padding-left: 195px;
+    padding-top: 40px;
+    /* padding: 0px 10px 10px 10px; */
+    border: 9px solid orange;
+    height: 280vh;
+    /* overflow: hidden; */
+    
 }
 
+.gri{
+  border: 2px solid blue;
+  width: 100%;
+  height: 50vh;
+
+}
 .banner{
     border: 2px solid red;
     height: 82.5vh;
