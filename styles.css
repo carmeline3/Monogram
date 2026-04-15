@@ -7,67 +7,19 @@
 }
 
 /* Still trying to style the nav and banner */
-
-.all{
-  background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 92.5vh;
-  border:4px solid blue;
-  
-}
-
-/* Birra this is for styling the navbar, I tried adding a dropdown menue but it's not working so I commente it out */
 header{
-    margin:15px ;
+    margin:14px ;
     border:2px solid green;
-    height: 51px; 
-    background-color: #1a2456;
-    display:flex;
-    align-items: center;
-    justify-content: end;
-    
+    height: 50px; 
 }
-
-
-/* .menu {
-  list-style: none;
-}
-
-.dropdown {
-  position: relative;
-  padding: 10px;
-}
-
-
-.dropdown-menu {
-  position: absolute;
-  background: white;
-  list-style: none;
-  padding: 10px;
-
-  display: none;
-}
-
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-} */
-
-
-/* Bira this is the first banner  section*/
 .console1{
    border:2px solid green;
    height: 92.5vh;
     border: 2px solid red;
     height: 82.5vh;
-    color: #EFC2B3;
-
+    
 }
 
-
-/* Pls do not change anything from here, if there's something wron pls come speak to me */
 .images-section1{
   border:4px solid blue;
   height: 200vh;
@@ -96,21 +48,10 @@ header{
 
 }
 
-.grid img{
-  width: 100%;
-  height: 50vh;
-}
-
 .gr{
   width: 204%;
-  height: 52vh;
+  height: 50vh;
   border: 2px solid blue;
-}
-
-.gr img{
-  width: 100%;
-  height: 52vh;
-  object-fit: cover;
 }
 
 
@@ -182,14 +123,6 @@ header{
   opacity: 1;
 }
 
-.badge {
-  position: absolute;
-  background: orange;
-  color: white;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 3px;
-}
 h3{
   font-size: 17.5px;
   padding: 10px;
@@ -282,21 +215,4 @@ footer a {
   width: 90%;
   height: 45vh;
 }
-
-.images{
-  grid-template-columns: 80vw  ;
-  height: 550%;
-  gap:30px;
-  padding-left: 100px;
-  padding-right: 200px;
-  padding-bottom: 20px;
-  
-}
-
-.grid{
-  border: 2px solid blue;
-  width: 100%;
-  height: 45vh;
-}
-
 }
