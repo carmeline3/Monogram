@@ -2,43 +2,72 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: prompt, sans-serif;
     
 }
 
 /* Still trying to style the nav and banner */
-header{
-    margin:14px ;
-    border:2px solid green;
-    height: 50px; 
-    background-color: #1A2456;
-    padding: 7px;
-    position: sticky;
-    align-items: center;
-    display: flex;
-    float: right;
-    
-    
-}
-.all{
-  height: 142.5;
-  border:10px solid purple;background-image: url("images/shop_cta_xl_896f6b8270 (3).webp");
-  background-repeat: no-repeat;
-  background-size: cover;
 
+.all{
+  background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 92.5vh;
+  border:4px solid blue;
+  
 }
+
+/* Birra this is for styling the navbar, I tried adding a dropdown menue but it's not working so I commente it out */
+header{
+    margin:15px ;
+    border:2px solid green;
+    height: 51px; 
+    background-color: #1a2456;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+
+/* .menu {
+  list-style: none;
+}
+
+.dropdown {
+  position: relative;
+  padding: 10px;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  list-style: none;
+  padding: 10px;
+
+  display: none;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+} */
+
+
+/* Bira this is the first banner  section*/
 .console1{
    border:2px solid green;
    height: 92.5vh;
     border: 2px solid red;
     height: 82.5vh;
-  color: #EFC2B3;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px 0px 14px;
-  position-relative: 
+    color: #EFC2B3;
+
 }
 
 
-
+/* Pls do not change anything from here, if there's something wron pls come speak to me */
 .images-section1{
   border:4px solid blue;
   height: 200vh;
@@ -49,7 +78,9 @@ header{
    grid-template-columns: 35vw 35vw;
     gap:10px;
     padding-left: 195px;
-    padding-top: 40px;
+
+
+    padding-top: 38px;
     /* padding: 0px 10px 10px 10px; */
     border: 4px solid orange;
     height: 200vh;
@@ -63,55 +94,110 @@ header{
   width: 100%;
   height: 50vh;
 
-  
 }
 
 .grid img{
-  max-width: 500px;
-  height: 100%;
-  width: 474px;
-}
- .gr{
-  width: 204%;
-  height: 50vh;
-  border: 2px solid blue; 
-}
-/* .gr img5{
   width: 100%;
-  height: 50vh; */
+  height: 50vh;
+}
 
-}
 .gr{
-  max-width: 500px;
-  height: 100%;
-  width: 474px;
+  width: 204%;
+  height: 52vh;
+  border: 2px solid blue;
 }
+
+.gr img{
+  width: 100%;
+  height: 52vh;
+  object-fit: cover;
+}
+
+
+
+
+
 
 .console2{
-  border:9px solid black;
+  /* border:9px solid black; */
   height: 69vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(images/banner2);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 
 .image{
-  border: 1px solid purple;
+  /* border: 9px solid orange; */
   height:280vh;
-   display: grid;
-   grid-template-columns: 25vw 25vw 25vw;
-    gap:10px;
-     padding-left: 195px;
-    padding-top: 40px;
-    /* padding: 0px 10px 10px 10px; */
-    border: 9px solid orange;
-    height: 280vh;
-    /* overflow: hidden; */
-    
+  display: grid;
+  gap:10px;
+  grid-template-columns: 25vw 25vw 25vw;
+  padding-left: 180px;
+  padding-right: 200px;
+  padding-top: 70px;
 }
 
-.gri{
-  border: 2px solid blue;
-  width: 100%;
-  height: 50vh;
 
+.gri{
+  
+  border: 2px solid blue;
+  width: 90%;
+  height: 45vh;
+  position: relative;  
+  overflow: hidden;    
+}
+
+
+.gri img{
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.main{
+  opacity: 1;
+}
+
+
+.hovy{
+  opacity: 0;
+}
+
+
+.gri:hover .main{
+  opacity: 0;
+}
+
+.gri:hover .hovy{
+  opacity: 1;
+}
+
+.badge {
+  position: absolute;
+  background: orange;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+h3{
+  font-size: 17.5px;
+  padding: 10px;
+}
+
+.price{
+  font-size: 12px;
+  color: gray;
 }
 .banner{
     border: 2px solid red;
@@ -119,14 +205,98 @@ header{
     width:100vw;
 }
 
-.foot{
-  border:2px solid black;
-  height:44.2vh;
-}
-.console1{
-  justify-content: center;
-  align-items: center;
+/* This is the footer section */
+
+
+footer {
+  height: 44.2vh;
+  background-color: #1a2456;
   display: flex;
-  flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  padding: 50px;
+}
+
+.mono, .quicklinks, .help, .info, .contact {
+  gap: 10px;
+  min-width: 200px;
+ 
+}
+
+h6 {
+  color: #efc2b3;
+}
+
+
+footer li {
+  list-style: none;
+  font-size: 12.6px;
+  line-height: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #efc2b3;
+}
+
+.icon-space {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.icon {
+  background-color: #efc2b3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon a {
+  color: #1a2456;
+}
+
+.submit {
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+}
+
+@media(max-width:1200px){
+ .image{
+  grid-template-columns: 80vw ;
+  height: 550%;
+  gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  
+}
+
+.gri{
+  border: 2px solid blue;
+  width: 90%;
+  height: 45vh;
+}
+
+.images{
+  grid-template-columns: 80vw  ;
+  height: 550%;
+  gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  
+}
+
+.grid{
+  border: 2px solid blue;
+  width: 100%;
+  height: 45vh;
+}
 
 }
