@@ -5,6 +5,18 @@
     font-family: prompt, sans-serif;
     
 }
+.container{
+  padding-right: 46%;
+  color: #EFC2B3;
+}
+nav{
+  display: flex;
+  gap: 20px;
+}
+nav a{
+  color: #EFC2B3;
+  text-decoration: none;
+}
 
 /* Still trying to style the nav and banner */
 header{
@@ -16,8 +28,9 @@ header{
     justify-content: end;
     align-items:center;
     gap:20px;
-    
-  
+    position: fixed;
+    width: 97%;
+
 }
 .all{
   border:3px solid blue;
@@ -26,7 +39,9 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  font-size:small;
+   list-style: none;
+   color: #EFC2B3;
 
 }
 .console1{
