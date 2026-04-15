@@ -11,12 +11,35 @@ header{
     margin:14px ;
     border:2px solid green;
     height: 50px; 
+    background-color: #1a2456;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    gap:20px;
+    
+  
+}
+.all{
+  border:3px solid blue;
+  height:142.5;
+  background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
 }
 .console1{
    border:2px solid green;
    height: 92.5vh;
     border: 2px solid red;
     height: 82.5vh;
+    color:#efc2b3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
     
 }
 
@@ -48,10 +71,21 @@ header{
 
 }
 
+.grid img{
+  width: 100%;
+  height: 50vh;
+}
+
 .gr{
   width: 204%;
-  height: 50vh;
+  height: 62vh;
   border: 2px solid blue;
+}
+
+.gr img{
+  width: 100%;
+  height: 62vh;
+  object-fit: cover;
 }
 
 
