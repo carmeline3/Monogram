@@ -2,7 +2,9 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: prompt, sans-serif;
+    font-family: "Inter", sans-serif;
+    z-index: 1;
+    
     
 }
 
@@ -16,9 +18,24 @@ header{
     justify-content: end;
     align-items:center;
     gap:20px;
-    
+    position: fixed;
+    width: 97vw;
+    z-index: 1000;
+   
+}
+
+.log{
   
 }
+
+header img{
+  border:2px solid black;
+  padding-right: 100px;
+  width: 10%;
+  height: 50px;
+}
+
+
 .all{
   border:3px solid blue;
   height:142.5;
@@ -29,6 +46,9 @@ header{
   
 
 }
+
+
+
 .console1{
    border:2px solid green;
    height: 92.5vh;
@@ -43,20 +63,24 @@ header{
     
 }
 
-.images-section1{
+/* .scroll{
+  height:30vh;
+  border:2px solid green;
+  width: 100wv;
+  
+} */
+/* .images-section1{
   border:4px solid blue;
   height: 200vh;
-}
+} */
 
 .images{
     display: grid;
    grid-template-columns: 35vw 35vw;
     gap:10px;
     padding-left: 195px;
-
-
     padding-top: 38px;
-    /* padding: 0px 10px 10px 10px; */
+    object-fit: cover;
     border: 4px solid orange;
     height: 200vh;
     /* overflow: hidden; */
@@ -71,9 +95,38 @@ header{
 
 }
 
-.grid img{
+/* .grid img{
   width: 100%;
   height: 50vh;
+} */
+.grid {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid img {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid .main {
+  opacity: 1;
+}
+
+.grid .hovy {
+  opacity: 0;
+}
+
+.grid:hover .main {
+  opacity: 0;
+}
+
+.grid:hover .hovy {
+  opacity: 1;
 }
 
 .gr{
@@ -88,23 +141,60 @@ header{
   object-fit: cover;
 }
 
+.gr {
+  position: relative;
+  overflow: hidden;
+}
+
+.gr img {
+  width: 100%;
+  height: 62vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gr .main {
+  opacity: 1;
+}
+
+.gr .hovy {
+  opacity: 0;
+}
+
+.gr:hover .main {
+  opacity: 0;
+}
+
+.gr:hover .hovy {
+  opacity: 1;
+}
+
 
 
 
 
 
 .console2{
-  /* border:9px solid black; */
+  border:9px solid black;
   height: 69vh;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-image: url(images/banner2);
+ background-image: url(images/shop-banner-module.webp);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
+  color:#1a2456;
+  padding-top: 30px;
  
+}
+
+.console2, h1{
+  font-size: 37.5px;
+  letter-spacing: 5px;
 }
 
 .image{
@@ -116,6 +206,8 @@ header{
   padding-left: 180px;
   padding-right: 200px;
   padding-top: 70px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 
@@ -155,6 +247,9 @@ header{
 
 .gri:hover .hovy{
   opacity: 1;
+ 
+  transform: scale(1.1);
+
 }
 
 h3{
@@ -163,13 +258,26 @@ h3{
 }
 
 .price{
-  font-size: 12px;
+  font-size: 15px;
   color: gray;
+  padding-top: 8px;
+
 }
-.banner{
+
+
+/* .banner{
     border: 2px solid red;
     height: 82.5vh;
     width:100vw;
+    
+} */
+
+.h3andsold{
+  width: 23vw;
+  border:2px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* This is the footer section */
@@ -185,14 +293,40 @@ footer {
   padding: 50px;
 }
 
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.pre {
+  position: absolute;
+  top: 15px;
+  left: 250px;
+  background: #ff8d6b;
+  color: white;
+  padding: 7px 10px;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
 .mono, .quicklinks, .help, .info, .contact {
   gap: 10px;
   min-width: 200px;
  
 }
 
-h6 {
+.titles {
   color: #efc2b3;
+  font-size: 12px;
+  font-weight: bold;
+ 
 }
 
 
@@ -231,9 +365,46 @@ footer a {
   border-radius: 15px;
   width: 100px;
   height: 30px;
+  border: 1px solid black;
+  background-color: #efc2b3;
+}
+
+input{
+  background-color: transparent;
+  border: 1px solid #efc2b3;
+  height: 30px;
+  width:50%;
 }
 
 @media(max-width:1200px){
+.images{
+  height: 400%;
+    display: grid;
+   grid-template-columns: 80vw;
+     gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+}
+
+.grid{
+  border: 2px solid blue;
+  width: 90%;
+  height: 45vh;
+}
+
+.gr{
+  width: 90%;
+  height: 62vh;
+  border: 2px solid blue;
+}
+
+.gr img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
  .image{
   grid-template-columns: 80vw ;
   height: 550%;
@@ -249,4 +420,22 @@ footer a {
   width: 90%;
   height: 45vh;
 }
+
+.pre {
+  position: absolute;
+  top: 7px;
+  left: 450px;
+  background: #ff8d6b;
+  color: white;
+  padding: 7px 10px;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+}
+footer{
+  height: 60vh;
+  
+}
+
+
 }
