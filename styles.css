@@ -1,13 +1,59 @@
 *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: prompt, sans-serif;
-    
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: prompt, sans-serif;
+}
+ 
+.container img{
+  height: 39px;
+  width:50px;
+
 }
 .container{
   padding-right: 46%;
   color: #EFC2B3;
+}
+/* Navbar layout */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Hidden menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 nav{
   display: flex;
@@ -29,13 +75,17 @@ header{
     align-items:center;
     gap:20px;
     position: fixed;
-    width: 97%;
+    width: 97vw;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
 
 }
-.all{
+.all {
   border:3px solid blue;
-  height:142.5;
-  background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp);
+  /* height:142.5px; */
+  background-image: url("images/shop_cta_xl_896f6b8270\ \(3\).webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,6 +94,17 @@ header{
    color: #EFC2B3;
 
 }
+
+.mon{
+  padding-right:700px;
+}
+.bg-img {
+  background-image: url("images/shop_cta_xl_896f6b8270\ \(3\).webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .console1{
    border:2px solid green;
    height: 92.5vh;
@@ -196,7 +257,7 @@ footer {
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+color: #EFC2B3;
   padding: 50px;
 }
 
@@ -206,20 +267,30 @@ footer {
  
 }
 
-h6 {
-  color: #efc2b3;
+.h6 {
+  color: #EFC2B3;
+  font: 12px prompt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+pre{
+  font-size: small;
+  padding: right;
+}
+
 
 
 footer li {
   list-style: none;
   font-size: 12.6px;
   line-height: 30px;
+  
 }
 
 footer a {
   text-decoration: none;
   color: #efc2b3;
+
 }
 
 .icon-space {
