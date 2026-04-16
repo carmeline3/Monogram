@@ -1,63 +1,141 @@
 *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: prompt, sans-serif;
-    
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: prompt, sans-serif;
+}
+ 
+.container img{
+  height: 39px;
+  width:50px;
+
+}
+.container img{
+  height: 39px; 
+  width: 50px;
+  
+
+}
+
+.mon{
+  padding-right: 700px;
+}
+/* Navbar layout */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Hidden menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+nav{
+  display: flex;
+  gap: 20px;
+}
+nav a{
+  color: #EFC2B3;
+  text-decoration: none;
 }
 
 /* Still trying to style the nav and banner */
 header{
     margin:14px ;
-    border:2px solid green;
     height: 50px; 
     background-color: #1a2456;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items:center;
     gap:20px;
+    position: fixed;
+    width: 97vw;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 10px;
     
-  
+
 }
-.all{
-  border:3px solid blue;
-  height:142.5;
-  background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp);
+.all {
+ /* height: 92.5vh; */
+  /* background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  font-size:small;
+   list-style: none;
+   color: #EFC2B3;
 
 }
+
+.mon{
+  padding-right:700px;
+}
+.bg-img {
+  background-image: url("images/shop_cta_xl_896f6b8270\ \(3\).webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .console1{
-   border:2px solid green;
    height: 92.5vh;
-    border: 2px solid red;
-    height: 82.5vh;
     color:#efc2b3;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     
-    
+  
 }
 
-.images-section1{
-  border:4px solid blue;
-  height: 200vh;
+
+
+.console1 a{
+  color: white;
+  
 }
+
+
 
 .images{
     display: grid;
    grid-template-columns: 35vw 35vw;
     gap:10px;
     padding-left: 195px;
-
-
     padding-top: 38px;
-    /* padding: 0px 10px 10px 10px; */
-    border: 4px solid orange;
+    object-fit: cover;
     height: 200vh;
     /* overflow: hidden; */
     
@@ -65,21 +143,49 @@ header{
 
 
 .grid{
-  border: 2px solid blue;
   width: 100%;
   height: 50vh;
 
 }
 
-.grid img{
+/* .grid img{
   width: 100%;
   height: 50vh;
+} */
+.grid {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid img {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid .main {
+  opacity: 1;
+}
+
+.grid .hovy {
+  opacity: 0;
+}
+
+.grid:hover .main {
+  opacity: 0;
+}
+
+.grid:hover .hovy {
+  opacity: 1;
 }
 
 .gr{
   width: 204%;
   height: 62vh;
-  border: 2px solid blue;
+ 
 }
 
 .gr img{
@@ -88,23 +194,61 @@ header{
   object-fit: cover;
 }
 
+.gr {
+  position: relative;
+  overflow: hidden;
+}
+
+.gr img {
+  width: 100%;
+  height: 62vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gr .main {
+  opacity: 1;
+}
+
+.gr .hovy {
+  opacity: 0;
+}
+
+.gr:hover .main {
+  opacity: 0;
+}
+
+.gr:hover .hovy {
+  opacity: 1;
+}
 
 
 
 
 
 .console2{
-  /* border:9px solid black; */
   height: 69vh;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-image: url(images/banner2);
+  background-image: url(images/shop-banner-module.webp);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
+  color:#1a2456;
+  padding-top: 30px;
  
+}
+
+
+
+.console2, h1{
+  font-size: 37.5px;
+  letter-spacing: 5px;
 }
 
 .image{
@@ -116,12 +260,12 @@ header{
   padding-left: 180px;
   padding-right: 200px;
   padding-top: 70px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 
 .gri{
-  
-  border: 2px solid blue;
   width: 90%;
   height: 45vh;
   position: relative;  
@@ -155,6 +299,9 @@ header{
 
 .gri:hover .hovy{
   opacity: 1;
+ 
+  transform: 0.3s ease;
+
 }
 
 h3{
@@ -163,13 +310,86 @@ h3{
 }
 
 .price{
-  font-size: 12px;
+  font-size: 15px;
   color: gray;
+  padding-top: 8px;
+
 }
-.banner{
+
+  .pre{
+
+  }
+
+
+.money{
+  font-size: 15px;
+  color: gray;
+  padding-top: 8px;
+   position: relative;  
+  overflow: hidden;    
+}
+.money{
+  padding-left: 90px;
+}
+.pr img{
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.money {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonhov {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
+.pr:hover .money {
+  opacity: 0;
+}
+
+.pr:hover .buttonhov {
+  opacity: 1;
+
+}
+
+.pr, .buttonhov{
+  margin-left:50px;
+  margin-bottom: -100px;
+}
+.buttonhov{
+  background-color: #1a2456;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  color:white;
+  font-weight: bold;
+  
+  
+}
+
+
+
+
+/* .banner{
     border: 2px solid red;
     height: 82.5vh;
     width:100vw;
+    
+} */
+
+.h3andsold{
+  width: 23vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* This is the footer section */
@@ -181,9 +401,55 @@ footer {
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+color: #EFC2B3;
   padding: 50px;
 }
+
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.pre {
+  position: absolute;
+  top: 15px;
+  left: 250px;
+  background: #ff8d6b;
+  color: white;
+  padding: 7px 10px;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+
+.pret {
+  position: absolute;
+  top: 15px;
+  left: 250px;
+  background: #ff8d6b;
+  color: white;
+  padding: 10px 10px;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+.pret{
+  margin-left: 190px;
+}
+/* .prey{
+line-height: 20px;
+color:#EFC2B3;
+} */
+
+
 
 .mono, .quicklinks, .help, .info, .contact {
   gap: 10px;
@@ -191,20 +457,31 @@ footer {
  
 }
 
-h6 {
+.titles {
   color: #efc2b3;
+  font-size: 12px;
+  font-weight: bold;
+ 
 }
+
+pre{
+  font-size: small;
+  padding: right;
+}
+
 
 
 footer li {
   list-style: none;
   font-size: 12.6px;
   line-height: 30px;
+  
 }
 
 footer a {
   text-decoration: none;
   color: #efc2b3;
+
 }
 
 .icon-space {
@@ -231,9 +508,46 @@ footer a {
   border-radius: 15px;
   width: 100px;
   height: 30px;
+  border: 1px solid black;
+  background-color: #efc2b3;
+}
+
+input{
+  background-color: transparent;
+  border: 1px solid #efc2b3;
+  height: 30px;
+  width:50%;
 }
 
 @media(max-width:1200px){
+.images{
+  height: 400%;
+    display: grid;
+   grid-template-columns: 80vw;
+     gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+}
+
+.grid{
+  
+  width: 90%;
+  height: 45vh;
+}
+
+.gr{
+   width: 90%;
+  height: 45vh;
+  
+}
+
+.gr img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
  .image{
   grid-template-columns: 80vw ;
   height: 550%;
@@ -245,8 +559,285 @@ footer a {
 }
 
 .gri{
-  border: 2px solid blue;
+  
   width: 90%;
   height: 45vh;
 }
+
+
+.pre {
+  position: absolute;
+  top: 7px;
+  left: 450px;
+  background: #ff8d6b;
+  color: white;
+  padding: 7px 10px;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+}
+footer{
+  height: 60vh;
+  
+}
+.h3andsold{
+  width: 23vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mon{
+  padding-right: 700px;
+}
+/* Navbar layout */
+nav  {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  font-size:12px;
+  
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Hidden menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+nav{
+  display: flex;
+  gap: 20px;
+  padding-right: 700px;
+}
+nav a{
+  color: #EFC2B3;
+  text-decoration: none;
+  
+}
+
+/* Still trying to style the nav and banner */
+header{
+    margin:14px ;
+    height: 50px; 
+    background-color: #1a2456;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+    position: fixed;
+    width: 95vw;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+
+}
+.all {
+ /* height: 92.5vh; */
+  /* background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size:small;
+   list-style: none;
+   color: #EFC2B3;
+
+}
+
+}
+
+@media(max-width:520px){
+  .all{
+    width:180%;
+  }
+.images{
+  height: 400%;
+    display: grid;
+   grid-template-columns: 80vw;
+     gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+}
+
+.grid{
+  
+  width: 90%;
+  height: 45vh;
+}
+
+.gr{
+   width: 90%;
+  height: 45vh;
+  
+}
+
+.gr img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+ .image{
+  grid-template-columns: 80vw ;
+  height: 550%;
+  gap:30px;
+  padding-left: 100px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  
+}
+
+.gri{
+  
+  width: 90%;
+  height: 45vh;
+}
+
+
+.pre {
+  position: absolute;
+  top: 7px;
+  left: 450px;
+  background: #ff8d6b;
+  color: white;
+  padding: 7px 10px;
+  color: #212529;
+  font-size: 12px;
+  font-weight: bold;
+}
+footer{
+  height: 100vh;
+  width: 120%;
+  
+}
+.h3andsold{
+  width: 23vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.mon{
+  padding-right: 700px;
+}
+/* Navbar layout */
+nav  {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  font-size:10px;
+  
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Hidden menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+/* Dropdown links */
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+nav{
+  display: flex;
+  gap: 20px;
+  padding-right: 700px;
+}
+nav a{
+  color: #EFC2B3;
+  text-decoration: none;
+  
+}
+
+/* Still trying to style the nav and banner */
+header{
+    margin:14px ;
+    height: 50px; 
+    background-color: #1a2456;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+    position: fixed;
+    width: 95%;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+
+}
+.all {
+ /* height: 92.5vh; */
+  /* background-image: url(images/shop_cta_xl_896f6b8270\ \(3\).webp); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size:small;
+   list-style: none;
+   color: #EFC2B3;
+
+}
+
+.console2{
+  width: 120%;
+}
+
+.console1{
+  width: 120%;
+}
+
 }
