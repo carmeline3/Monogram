@@ -5,9 +5,15 @@
     font-family: prompt, sans-serif;
     
 }
-.container{
-  padding-right: 46%;
-  color: #EFC2B3;
+.container img{
+  height: 39px; 
+  width: 50px;
+  
+
+}
+
+.mon{
+  padding-right: 700px;
 }
 nav{
   display: flex;
@@ -25,12 +31,14 @@ header{
     height: 50px; 
     background-color: #1a2456;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items:center;
     gap:20px;
     position: fixed;
     width: 97vw;
     z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 10px;
 
 }
 .all{
@@ -45,6 +53,9 @@ header{
    color: #EFC2B3;
 
 }
+
+
+
 .console1{
    border:2px solid green;
    height: 92.5vh;
@@ -56,13 +67,20 @@ header{
     align-items: center;
     flex-direction: column;
     
-    
+  
 }
 
-.images-section1{
-  border:4px solid blue;
-  height: 200vh;
+.arrow{
+  border: 2px solid red;
+ 
 }
+
+.console1 a{
+  color: white;
+  
+}
+
+
 
 .images{
     display: grid;
@@ -165,7 +183,6 @@ header{
 
 
 
-
 .console2{
   border:9px solid black;
   height: 69vh;
@@ -173,14 +190,17 @@ header{
   justify-content: start;
   align-items: center;
   flex-direction: column;
- background-image: url(images/shop-banner-module.webp);
+  background-image: url(images/shop-banner-module.webp);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   color:#1a2456;
   padding-top: 30px;
  
 }
+
+
 
 .console2, h1{
   font-size: 37.5px;
@@ -238,7 +258,7 @@ header{
 .gri:hover .hovy{
   opacity: 1;
  
-  transform: scale(1.1);
+  transform: 0.3s ease;
 
 }
 
@@ -253,6 +273,63 @@ h3{
   padding-top: 8px;
 
 }
+
+
+.money{
+  font-size: 15px;
+  color: gray;
+  padding-top: 8px;
+   position: relative;  
+  overflow: hidden;    
+}
+.money{
+  padding-left: 90px;
+}
+.pr img{
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.money {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonhov {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
+.pr:hover .money {
+  opacity: 0;
+}
+
+.pr:hover .buttonhov {
+  opacity: 1;
+
+}
+
+.pr, .buttonhov{
+  margin-left:50px;
+  margin-bottom: -100px;
+}
+.buttonhov{
+  background-color: #1a2456;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  color:white;
+  font-weight: bold;
+  
+  
+}
+
+
 
 
 /* .banner{
@@ -302,6 +379,12 @@ footer {
   color: #212529;
   font-size: 12px;
   font-weight: bold;
+  
+}
+
+.prey{
+line-height: 20px;
+color:#EFC2B3;
 }
 
 
